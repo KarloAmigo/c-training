@@ -3,6 +3,10 @@
 #include <string.h>
 #include <cs50.h>
 
+float durchschnitt(int noten[], int noten_anzahl);
+int beste_note(int noten[], int noten_anzahl);
+int schlechteste_note(int noten[], int noten_anzahl);
+
 int main(int argc, string argv[])
 {
     // Überprüfen, ob genau ein Argument übergeben wurde
@@ -30,16 +34,53 @@ int main(int argc, string argv[])
         }
 
     }
-    // Berechnung des Durchschnitts
-float durchschnitt = 0.0;
-   for (int i = 0; i < noten_anzahl; i++)
-   {
-        durchschnitt += noten[i];
-   }
-   durchschnitt /= noten_anzahl;
+    // Print des Durchschnitts
+    printf("Durchschnitt: %.2f\n", durchschnitt(noten, noten_anzahl));
+    //Print der Besten Note
+    printf("Beste Note: %d\n", beste_note(noten, noten_anzahl));
+    //Print der Schlechtesten Note
+    printf("Schlechteste Note: %d\n", schlechteste_note(noten, noten_anzahl));
 
-    printf("\n%s Durchschnitt: %.2f\n", argv[1]+32, durchschnitt);
-    return 0;
+    for (int j = 0; j < noten_anzahl; j++)
+    
 
 }
 
+float durchschnitt(int noten[], int noten_anzahl)
+{
+    float durchschnitt = 0.0;
+    
+    for (int i = 0; i < noten_anzahl; i++)
+    {
+        durchschnitt += noten[i];
+    }
+    durchschnitt /= noten_anzahl;
+   
+   return durchschnitt;
+}
+
+int beste_note(int noten[], int noten_anzahl)
+{
+    int beste_itm = 6; //itm = in the moment
+    for (int i = 0; i < noten_anzahl; i++)
+    {
+        if (noten[i] < beste_itm)
+        {
+            beste_itm = noten[i];
+        }
+    }
+    return beste_itm;
+}
+
+int schlechteste_note(int noten[], int noten_anzahl)
+{
+    int schlechteste_itm = 1;
+    for (int i = 0; i < noten_anzahl; i++)
+    {
+        if (noten[i] > schlechteste_itm)
+        {
+            schlechteste_itm = noten[i];
+        }
+    }
+    return schlechteste_itm;
+}
