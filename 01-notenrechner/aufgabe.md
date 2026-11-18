@@ -78,11 +78,3 @@ gcc noten.c -o noten.exe -lcs50
 
 > **Tipp: Selbst testen, bevor du „Prüf mal“ sagst**
 > Überleg dir, welche Eingaben dein Programm **kaputt machen** könnten: zu viele Argumente? Eine Note `0`? Nur eine einzige Note? Ein Durchschnitt wie `7 / 3`?
-
-## Wenn du fertig bist
-
-Schreib im Chat **„Fertig“** und dazu:
-- Bis zu welcher Stufe bist du gekommen?
-- Wie schwer war es? (1–5)
-- Ungefähr wie lange hast du gebraucht?
-- Hast du etwas nachgeschaut? Was?
