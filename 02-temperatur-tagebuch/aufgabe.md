@@ -94,11 +94,3 @@ gcc temperatur.c -o temperatur.exe -lcs50
 > - Die Grenzen: `-30` und `45` müssen gehen, `-31` und `46` nicht
 > - Alle Tage gleich warm? Alle Tage unter 0?
 > - Ein Stadtname, der schon Großbuchstaben hat, zum Beispiel `NewYork`
-
-## Wenn du fertig bist
-
-Schreib im Chat **„Fertig“** und dazu (**diesmal bitte nicht vergessen** 😉):
-- Bis zu welcher Stufe bist du gekommen?
-- Wie schwer war es? (1–5)
-- Ungefähr wie lange hast du gebraucht?
-- Hast du etwas nachgeschaut oder Hilfe benutzt? Was?
