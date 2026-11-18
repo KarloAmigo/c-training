@@ -41,7 +41,7 @@ int main(int argc, string argv[])
     //Print der Schlechtesten Note
     printf("Schlechteste Note: %d\n", schlechteste_note(noten, noten_anzahl));
 
-    for (int j = 0; j < noten_anzahl; j++)
+    for (int j = 0; j < noten_anzahl; j++);
     
 
 }
