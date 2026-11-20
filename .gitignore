@@ -1,3 +1,6 @@
 # Kompilierte Programme nicht hochladen, die kann jeder selbst aus dem .c-Code bauen
 *.exe
 *.o
+
+# VS-Code-Einstellungen sind nur für meinen PC
+.vscode/
