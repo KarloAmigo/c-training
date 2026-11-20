@@ -11,7 +11,7 @@ Jede Aufgabe hat einen eigenen Ordner mit:
 
 | Nr. | Aufgabe | Themen | Status |
 |---|---|---|---|
-| 01 | [Notenrechner](01-notenrechner/) | `argc`/`argv`, `do-while`, Arrays, Durchschnitt | ✅ Stufe 1 |
+| 01 | [Notenrechner](01-notenrechner/) | `argc`/`argv`, `do-while`, Arrays, eigene Funktionen, verschachtelte Schleifen (Balkendiagramm) | ✅ alle Stufen + Bonus |
 | 02 | [Temperatur-Tagebuch](02-temperatur-tagebuch/) | eigene Funktionen, Arrays als Parameter, Min/Max, `toupper` | ✅ alle Stufen + Bonus |
 | 03 | [Suchen & Sortieren](03-suchen-sortieren/) | Linear Search, Bubble Sort, Binary Search, Big O | 🚧 in Arbeit |
 
