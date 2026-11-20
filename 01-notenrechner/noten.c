@@ -6,6 +6,7 @@
 float durchschnitt(int noten[], int noten_anzahl);
 int beste_note(int noten[], int noten_anzahl);
 int schlechteste_note(int noten[], int noten_anzahl);
+void balkendiagramm(int noten[], int noten_anzahl);
 
 int main(int argc, string argv[])
 {
@@ -27,7 +28,7 @@ int main(int argc, string argv[])
    int noten[noten_anzahl];
    for (int i = 0; i < noten_anzahl; i++)
     {
-        noten[i] = get_int("Noten %d: ", i + 1);
+        noten[i] = get_int("Note %d: ", i + 1);
         if (noten[i] < 1 || noten[i] > 6)
         {
             i--; // Wiederhole die Eingabe für diese Note
@@ -35,15 +36,15 @@ int main(int argc, string argv[])
 
     }
     // Print des Durchschnitts
-    printf("Durchschnitt: %.2f\n", durchschnitt(noten, noten_anzahl));
+    printf("\nDurchschnitt: %.2f\n", durchschnitt(noten, noten_anzahl));
     //Print der Besten Note
     printf("Beste Note: %d\n", beste_note(noten, noten_anzahl));
     //Print der Schlechtesten Note
     printf("Schlechteste Note: %d\n", schlechteste_note(noten, noten_anzahl));
 
-    for (int j = 0; j < noten_anzahl; j++);
-    
+    balkendiagramm(noten, noten_anzahl);
 
+    return 0;
 }
 
 float durchschnitt(int noten[], int noten_anzahl)
@@ -84,3 +85,23 @@ int schlechteste_note(int noten[], int noten_anzahl)
     }
     return schlechteste_itm;
 }
+
+void balkendiagramm(int noten[], int noten_anzahl)
+{
+    printf("\n");
+    // Für jede mögliche Note von 1 bis 6 eine Zeile ausgeben
+    for (int note = 1; note <= 6; note++)
+    {
+        printf("%d: ", note);
+        // Für jedes Vorkommen dieser Note ein # ausgeben
+        for (int i = 0; i < noten_anzahl; i++)
+        {
+            if (noten[i] == note)
+            {
+                printf("#");
+            }
+        }
+        printf("\n");
+    }
+}
+
